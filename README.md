@@ -57,7 +57,7 @@ python Implementation/main.py
 python Implementation/evaluation.py
 ```
 
-##Lecturer
+## Lecturer
 - Mrs Lê Ánh Dương
 
 ## Authors
