@@ -27,6 +27,8 @@ This repository contains the implementation and experimental results of our rese
    - The result includes:
       + [Final_Credit](Result/credit_final_anomalies.csv)
       + Comparison table among Probability and Statistical methods.
+        ![Comparison table](Result/comparisonTable.jpg)
+
 ### Hardware
 - Laptop MSI Katana 15 B13VEK (Intel i7-13620H)
 
