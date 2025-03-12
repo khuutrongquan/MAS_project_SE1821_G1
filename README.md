@@ -50,14 +50,8 @@ This repository contains the implementation and experimental results of our rese
 git clone https://github.com/khuutrongquan/MAS_project_SE1821_G1.git
 cd project_mas_se1921
 ```
-2. Download the dataset
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Run experiments (edit the file_path and corresponding key):
+2. Run experiments (edit the file_path and corresponding key):
 ```bash
 python Implementation/main.py
 python Implementation/evaluation.py
