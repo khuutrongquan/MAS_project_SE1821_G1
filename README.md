@@ -1,60 +1,26 @@
 ## Probability Statistic on Anomaly Detection - A survey
-This repository contains the implementation and experimental results of our research on accelerating B+-tree construction using General-Purpose Computing on Graphics Processing Units (GPGPU).
+This repository contains the implementation and experimental results of our research on anomaly detection by using Probability Statistic.
 
 ## Introduction
-
-The B+-tree data structure plays a crucial role in data storage and retrieval. However, traditional methods of constructing B+-trees face significant challenges when handling large datasets due to their high time complexity. Additionally, previous GPU methods could not fully improve tree construction performance with massive datasets. Therefore, our research proposes a novel method to accelerate B+-tree construction on large datasets using GPGPU. The method fully parallelizes the insertion operation, surpassing CPU-based methods and the previous GPU-based method in both efficiency and scalability.
+1. **Input**
+   - Column 1: Time (second), each second has many withdrawals.
+   - Column 2: Amount - money after each transaction.
+   - Column 3: Class - normal data is labeled as 0, while abnormal data is labeled as 1
+2. **Output**
+   - The model outputs values comparing the accuracy of statistical probability methods with the original data.
 
 ## Main Contributions
 
-1. **Novel GPU-based Construction Method**
-   - Developed a new parallel insertion algorithm specifically optimized for GPU architecture.
-   - Achieve 521.9x, 36.1x, 1.8x time respectively speedup to CPU top-down for 2000MB dataset.
-2. **Three steps for Proposed Solution**
-   - Sort by CuPy sort (from Cupy library).
-   - Insertion into the 3D Tree Array (Proposed Construction method).
-   - Conversion from 3D Array to 2D Representation (Our Method's optimization).
-3. **Core techniques of our Method**
-   - Using Arrays instead Linked list.
-   - Proposing new formula to calculate index position for every key in the B+-tree simutaneously using GPGPU's kernel.
-   - Converting 3D representaion into 2D in parallel using GPU's kernel.
-
-## Implementation Methods
-
-### 1. CPU Top-down Approach ([TopDownCPU.py](Source/TopDownCPU.py))
-- Traditional sequential insertion.
-- Traverses from root to leaf for each key.
-- Suitable for small datasets.
-
-![Alt text](Images/Linear-basedB+-treeInsertion.png)
-
-
-### 2. CPU Bottom-up Approach ([BottomUpCPU.py](Source/BottomUpCPU.py))
-- Builds tree from leaf level upward, sequentially as visualized as each dashed arrows.
-- Improved efficiency over top-down approach.
-- Better performance for medium-sized datasets.
-
-![Alt text](Images/Level-basedInsertionVisualization.png)
-
-
-
-### 3. Previous GPU-based approach ([PreviousGPU.py](Source/PreviousGPU.py))
-- Builds tree bottom up from leaf level, level by level as shown as the curved arrows.
-- Parallel at each level but sequential in total.
-![Alt text](Images/Level-basedInsertionVisualization.png)
-
-### 4. GPU-based Approach ([ProposedMethod.py](Source/ProposedMethod.py))
-- Novel parallel construction method.
-- Fully utilizes GPU capabilities.
-- Optimal for large-scale datasets.
-- Features two distinct CUDA kernels:
-  - Parallel 3D tree construction.
-  - 3D to 2D array conversion.
-
-![Alt text](Images/InsertingProccessingDiagram.png)
-
-
-## Experimental Results
+1. **Data preprocessing**
+   - Change the Time(second) to minutes.
+   - Calculate the mean of Time each minute.
+   - Use the log function for Amount.
+2. **Probability and Statistical Calculation**
+   - Calculate on Poisson distribution, Gaussian distribution and Interquartile Range method.
+3. **Default Thresholds Setup**
+   - Set the threshold(s) for each Probability and Statistical method.
+4. **Experimental Results**
+   - Experimental code is stored in ([main.py](Implementation/main.py))
 
 ### Test Environment
 - CPU: AMD Ryzen 7 7435HS (16 cores, 3.1GHz).
