@@ -1,5 +1,4 @@
-## Khảo sát các phương pháp xác suất thống kê trong phát hiện bất thường
-
+## Probability Statistic on Anomaly Detection - A survey
 This repository contains the implementation and experimental results of our research on accelerating B+-tree construction using General-Purpose Computing on Graphics Processing Units (GPGPU).
 
 ## Introduction
