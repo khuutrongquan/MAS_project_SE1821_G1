@@ -1,4 +1,4 @@
-## Probability Statistic on Anomaly Detection - A survey
+## Probability Statistic on Anomaly Detection - A Survey
 This repository contains the implementation and experimental results of our research on anomaly detection by using Probability Statistic.
 
 ## Introduction
@@ -47,8 +47,8 @@ This repository contains the implementation and experimental results of our rese
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/mintii13/A_New_Construction_Method_for_BPTree_with_GPGPU.git
-cd b-plus-tree-gpgpu
+git clone https://github.com/khuutrongquan/MAS_project_SE1821_G1.git
+cd project_mas_se1921
 ```
 2. Download the dataset
 
