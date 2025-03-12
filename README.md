@@ -23,7 +23,10 @@ This repository contains the implementation and experimental results of our rese
 4. **Implementation**
    - Experimental code is stored in [main.py](Implementation/main.py).
    - Evaluational code is stored in [evaluation.py](Implementation/evaluation.py)
-
+5. **Result**
+   - The result includes:
+      + [Final_Credit](Result/credit_final_anomalies.csv)
+      + Comparison table among Probability and Statistical methods.
 ### Hardware
 - Laptop MSI Katana 15 B13VEK (Intel i7-13620H)
 
