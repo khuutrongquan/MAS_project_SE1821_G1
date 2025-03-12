@@ -45,8 +45,8 @@ This repository contains the implementation and experimental results of our rese
 
 ## Dataset Access
 
-- Test datasets are available at: [Credit Card Fraud Detection](Dataset/creditcard.csv)
-- Reference at https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data
+- Test dataset is available at: [Credit Card Fraud Detection](Dataset/creditcard.csv)
+- Referenced at https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data
 
 ## Usage
 
