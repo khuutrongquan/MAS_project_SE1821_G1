@@ -28,7 +28,7 @@ This repository contains the implementation and experimental results of our rese
 - Laptop MSI Katana 15 B13VEK (Intel i7-13620H)
 
 ### Software
-- Visual Studio Code (vscode)
+- Visual Studio Code (VS code)
 - Python 3.7+
 - Required libraries:
   ```
