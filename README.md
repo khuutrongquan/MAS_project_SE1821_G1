@@ -12,7 +12,7 @@ This repository contains the implementation and experimental results of our rese
 ## Main Contributions
 
 1. **Data preprocessing**
-   - Change the Time(second) to minutes.
+   - Change the Time(second) to minute.
    - Calculate the mean of Time each minute.
    - Use the log function for Amount.
 2. **Probability and Statistical Calculation**
