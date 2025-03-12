@@ -25,7 +25,7 @@ This repository contains the implementation and experimental results of our rese
    - Evaluational code is stored in [evaluation.py](Implementation/evaluation.py)
 5. **Result**
    - The result includes:
-      + [Final_Credit](Result/credit_final_anomalies.csv)
+      + [Final_Credit](Result/creditcard_final_anomalies.csv)
       + Comparison table among Probability and Statistical methods.
         ![Comparison table](Result/comparisonTable.jpg)
 
