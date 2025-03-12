@@ -53,7 +53,7 @@ This repository contains the implementation and experimental results of our rese
 1. Clone the repository:
 ```bash
 git clone https://github.com/khuutrongquan/MAS_project_SE1821_G1.git
-cd project_mas_se1921
+cd project_mas_se1821
 ```
 
 2. Run experiments (edit the file_path and corresponding key):
@@ -75,7 +75,7 @@ python Implementation/evaluation.py
 - Nguyễn Thị Lộc Nhi - SE182735
 - Nguyễn Vĩnh Khang - SE182879
 
-FPT University, Ho Chi Minh, Vietnam
+SE1821, FPT University, Ho Chi Minh, Vietnam
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
